@@ -1,3 +1,6 @@
+#ifndef __ANY_H__
+#define __ANY_H__
+
 #include <memory>
 #include "TypeHolder.h"
 
@@ -37,8 +40,10 @@ public:
         }
 
         return static_cast<Holder<T>*>(_holder.get())->GetValue();
-  }
+    }
 
 private:
     std::unique_ptr<HolderBase> _holder;
 };
+
+#endif // __ANY_H__

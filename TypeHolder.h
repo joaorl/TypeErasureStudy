@@ -1,3 +1,6 @@
+#ifndef __TYPE_HOLDER_H__
+#define __TYPE_HOLDER_H__
+
 #include <typeinfo> 
 
 using namespace std; 
@@ -39,3 +42,5 @@ public:
 private:
     T _value;
 };
+
+#endif // __TYPE_HOLDER_H__
