@@ -5,4 +5,9 @@ project (AnyTypeErasure)
 
 set(application_name "any-demo")
 
-add_executable (${application_name} main.cpp)
+set(SOURCE_FILES
+    Json.cpp
+    main.cpp
+    )
+
+add_executable (${application_name} ${SOURCE_FILES})
